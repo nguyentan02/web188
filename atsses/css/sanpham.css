@@ -1,0 +1,127 @@
+.page__main {
+    background-color: #ebebe0;
+
+}
+
+#section__list__box {
+    overflow: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+
+}
+
+#section__list__box::-webkit-scrollbar {
+    display: none;
+}
+
+#div__list-product {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: max-content;
+}
+
+.div__item {
+    display: block;
+    text-align: center;
+    margin: 8px;
+    border: 3px solid #dbd7d9;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 295px;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.div__item:hover {
+    box-shadow: 0 0 15px 2px rgba(0, 0, 1, 1);
+    cursor: pointer;
+}
+
+.pc--img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+
+.article__title {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 300;
+    line-height: 34px;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #000;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    clear: both;
+    text-shadow: 2px 2px 10px #241515;
+    position: relative;
+}
+
+.article__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 200px;
+    height: 4px;
+    bottom: -5px;
+    background-image: radial-gradient(#241515, #fff);
+    transform: skewX(-12deg) translateX(-50%);
+}
+
+
+.div__content {
+    margin-bottom: 12px;
+}
+
+.div__content--p {
+    margin: 5px;
+    font-weight: bold;
+    height: 75px;
+    display: inline-block;
+}
+
+.div__content--p2 {
+    display: inline-block;
+}
+
+.span__icon_cart {
+    background-image: linear-gradient(108deg, #f7434c, #ff8949);
+    font-size: 15px;
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+
+.button__icon-cart {
+    margin-right: 5px;
+}
+
+.span__icon_cart:hover {
+    background-image: linear-gradient(108deg, #ff8949, #f7434c);
+    cursor: pointer;
+}
+
+.section__price {
+    display: inline-block;
+    color: rgb(206, 7, 7);
+}
+
+.section__title {
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 56px;
+    clear: both;
+}

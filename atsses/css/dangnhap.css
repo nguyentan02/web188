@@ -1,0 +1,78 @@
+body {
+  background-color: aqua;
+}
+
+.main_section {
+  background-color: antiquewhite;
+  border: 3px solid red;
+  display: block;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.section_h1 {
+  font-size: 30px;
+}
+
+.section_p {
+  font-size: 18px;
+}
+
+.p_a {
+  text-decoration: none;
+}
+
+.section_div {}
+
+.form-user {}
+
+.input-form-user {
+  border: 2px solid red;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 3px 70px 3px 10px;
+}
+
+.form-pass {}
+
+.input-form-pass {
+  margin-top: 8px;
+  border: 2px solid red;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 3px 70px 3px 10px;
+}
+
+.section_div2 {}
+
+.form-checkbox {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.checkbox-luudangnhap {}
+
+.forgot-pass {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button-dangnhap {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 3px solid blue;
+  border-radius: 3px;
+  background-color: blue;
+}
+
+.dangnhap {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 78px;
+  color: white;
+}
