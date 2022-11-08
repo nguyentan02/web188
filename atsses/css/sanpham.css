@@ -18,7 +18,6 @@
 #div__list-product {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    width: max-content;
 }
 
 .div__item {
@@ -42,11 +41,15 @@
     display: block;
     object-fit: cover;
     max-width: 100%;
-    height: 250px;
-    width: 250px;
-    margin: auto;
-}
+    height: 200px;
 
+    margin: auto;
+    overflow: hidden;
+    transition: transform .5s, filter 1.5s ease-in-out;
+}
+.pc--img:hover{
+    transform: scale(1.1);
+  }
 .article__title {
     font-family: "Open Sans", "sans-serif";
     font-weight: 300;
@@ -84,7 +87,9 @@
     height: 75px;
     display: inline-block;
 }
-
+.div__content--p a{
+    text-decoration: underline;
+}
 .div__content--p2 {
     display: inline-block;
 }
