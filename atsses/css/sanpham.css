@@ -40,7 +40,7 @@
     cursor: pointer;
 }
 
-.pc--img {
+.item--img {
     display: block;
     object-fit: cover;
     max-width: 100%;
@@ -50,7 +50,7 @@
     overflow: hidden;
     transition: transform .5s, filter 1.5s ease-in-out;
 }
-.pc--img:hover{
+.item--img:hover{
     transform: scale(1.1);
   }
 .article__title {

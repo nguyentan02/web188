@@ -1,0 +1,69 @@
+.page__main{
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.slider {
+    position: relative;
+    display: block;
+    margin-top: 92px;
+    padding-top: 50%;
+    background: url('/atsses/img/tintuc/knknk-1-1024x576.jpg') top center / cover no-repeat;
+}
+
+.slider .text-content {
+    position: absolute;
+    bottom: 4px;
+    /* left: 50%; */
+    width: 100%;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.slider .text-heading {
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+.text-post-name a{
+    color:#dd3333;
+}
+.slider .text-description {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.post-block{
+     margin-top: 10px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.post-block span{
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+    border-top: 1px solid #ebebeb;
+}
+.block-title-wrap{
+    position: relative;
+}
+.td-block-title{
+    border-color: #dd3333;
+}
+.block-title{
+    margin-top: 0;
+    line-height: 1;
+    border-bottom: 2px solid #222222;
+}
+.block-title {
+    background-color: #dd3333;
+}
+.block-title span{
+    line-height: 17px;
+    padding: 7px 12px 4px ;
+    color:#fff ;
+    font-weight: 400;
+}
