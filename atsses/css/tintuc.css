@@ -40,3 +40,362 @@
     height: 1px;
     border-top: 1px solid black;
 }
+
+.news__section {}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-9 {
+    flex: 0 0 calc(75%);
+    max-width: 75%;
+}
+
+.news__col {
+    margin-right: 20px;
+    background-color: #fff;
+}
+
+.news__card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, .125);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0px 0px 6px dimgray;
+}
+
+.news__left__item {
+    flex-basis: 490px;
+}
+
+.news__left--item--time {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #9b9b9b;
+    padding-top: 10px;
+}
+
+.news__right__item {
+    margin-top: 10px;
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.news__hor--item {
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.news__hor--item--info {
+    margin-left: 10px;
+    flex: 1;
+}
+
+.news__hor--item--title {
+    text-align: left;
+    font-size: 15px;
+    line-height: 19px;
+    max-height: 60px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.news__hor--item--time {
+    font-size: 13px;
+    line-height: 22px;
+    color: #9b9b9b;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+h2,
+h3 {
+    color: #3d3d3d;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.col-3 {
+    position: relative;
+    flex: 0 0 calc(25%);
+    min-width: 25%;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 1px solid;
+    word-wrap: break-word;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px dimgray;
+
+}
+
+.card__header {
+    border-bottom: 1px solid black;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.card__body {
+    flex: 1 1 auto;
+    padding: 15px;
+}
+
+.news__mostView {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__mostView li:first-child span {
+    background: #cb1c22;
+}
+
+.news__mostView li span {
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #ced4da;
+}
+
+.news__mostView li {
+    display: flex;
+}
+
+.news__mostView li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.news__mostView li a {
+    color: #3d3d3d;
+}
+
+.news__mostView li h3 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    max-height: 36px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.tdc-row {
+    width: 1200x;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.news__update {
+    display: block;
+    min-height: 1px;
+    float: left;
+    padding-right: 24px;
+    padding-left: 34px;
+    position: relative;
+    width: 73.66666667%;
+}
+
+.news__update--column {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.title__wrap {
+    position: relative;
+
+}
+
+.td-title__wrap {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #222222;
+}
+
+.td-title__wrap>* {
+    background-color: #dd3333;
+    line-height: 17px;
+    color: #fff;
+    padding: 7px 12px 3px;
+}
+
+.title__wrap h4 {
+    color: #111111;
+    font-weight: 400;
+    margin: 6px 0;
+    border-color: #dd3333;
+}
+
+.td-title__wrap span {
+    display: inline-block;
+    color: #fff;
+    padding: 7px 12px 4px;
+}
+
+.td__iner {
+    height: auto;
+}
+
+.td__module {
+    position: relative;
+    border-bottom: 1.4px solid #e8e8e8;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.td__module--thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.item__details {
+    margin-left: 244px;
+    min-height: 150px;
+}
+
+.td__module--title>a {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #111111;
+}
+
+.td__module--info {
+    font-family: 'Open Sans', 'Open Sans Regular', sans-serif;
+    font-size: 11px;
+    margin-bottom: 7px;
+    line-height: 1;
+    min-height: 17px;
+}
+
+.td-post-author-name {
+    font-weight: bold;
+    display: inline-block;
+    top: 2px;
+    color: #cb1c22;
+}
+
+.td-post-date {
+    color: #767676;
+    display: inline-block;
+    top: 2px;
+}
+
+.td-excerpt {
+    font-size: 13px;
+    color: #767676;
+    font-family: 'Open Sans', 'Open Sans Regular', sans-serif;
+    margin-top: 9px;
+}
+
+.td__load--more {
+    text-align: center;
+    clear: both;
+    padding-top: 10px;
+}
+
+.td__load--more a {
+    color: #767676;
+}
+
+.td__load--more-click {
+    display: inline-block;
+    font-family: 'Open Sans', 'Open Sans Regular', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    padding: 8px 10px;
+    border: 1px solid #C9C9C9;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.td__load--more-click:hover {
+    background-color: #dd3333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.td__module-wrap {
+    display: none;
+    text-align: left;
+}
+
+/* .td__load--more: .td__module {
+    display: block;
+} */
+
+/* banner */
+.post__banner {
+    display: block;
+    min-height: 1px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 31px;
+    position: relative;
+    width: 26.33333333%;
+}
+
+.post__wrapper {
+
+    /* position: absolute; */
+    top: 20px;
+    bottom: auto;
+    z-index: 1;
+}
+
+.post__wrapper--baneer {
+    margin-bottom: 10px;
+    max-width: 100%;
+
+}
+
+.img__banner {
+    max-width: 100%;
+}
