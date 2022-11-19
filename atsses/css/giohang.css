@@ -1,0 +1,44 @@
+.container {
+    margin: 80px auto;
+    width: 90%;
+}
+
+.list-items {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.list-head th {
+    background-color: #17a2b8;
+    border: 1px solid black;
+    padding: 10px 3px;
+}
+
+:is(.list-foot, .list-body) :is(td, th) {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.list-body tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.list-body tr td:not(:nth-child(3)) {
+    text-align: center;
+}
+
+.list-foot tr td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-foot tr td:first-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.list-foot tr:first-child td:last-child {
+    /* background: url("") center center border-box no-repeat; */
+    background-size: 65%;
+}

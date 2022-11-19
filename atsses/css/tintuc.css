@@ -6,7 +6,7 @@
     font-size: 28px;
     color: #000;
     padding-top: 16px;
-    margin-top: 94px;
+    margin-top: 60px;
     margin-bottom: 16px;
     text-align: center;
     clear: both;
@@ -278,7 +278,8 @@ h3 {
     height: auto;
 }
 
-.td__module {
+.td__module,
+.td__module-wrap {
     position: relative;
     border-bottom: 1.4px solid #e8e8e8;
     margin-top: 25px;
@@ -367,8 +368,9 @@ h3 {
     text-align: left;
 }
 
-/* .td__load--more: .td__module {
+/* .td__load--more:hover .td__module {
     display: block;
+
 } */
 
 /* banner */

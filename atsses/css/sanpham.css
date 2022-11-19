@@ -1,5 +1,5 @@
 .article__main {
-    margin-top: 92.95px;
+    margin-top: 60px;
 }
 
 #section__list__box {
@@ -45,14 +45,16 @@
     margin: auto;
     overflow: hidden;
     transition: transform .5s, filter 1.5s ease-in-out;
+
 }
 
 .item--img:hover {
     transform: scale(1.1);
+
 }
 
 .article__title {
-    font-family: "Open Sans", "sans-serif";
+    font-family: "Roboto", "sans-serif";
     font-weight: 300;
     line-height: 34px;
     text-transform: uppercase;
