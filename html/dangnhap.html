@@ -1,93 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>DANG NHAP</title>
-        <link rel="stylesheet" href="../atsses/css/main.css"> 
-        <link rel="stylesheet" href="../atsses/css/dangnhap.css">
-     
-      <link rel="stylesheet" href="../atsses/css/header.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DANG NHAP</title>
+  <link rel="stylesheet" href="../atsses/css/dangnhap.css">
+  <link rel="stylesheet" href="../atsses/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__img-logo" href="#"><img class="img__logo" src="../atsses/img/logocomputer.png" alt=""></a>
+    <nav class="header__nav">
+      <ul class="header__nav__list">
+        <li><a class="nav__link " href="./trangchu.html">Trang chủ</a> </li>
+        <li><a class="nav__link " href="./sanpham.html">Sản phẩm</a></li>
+        <li>
+          <a class="nav__link" href="#">Tài khoản <i class="header__list-more fa-solid fa-chevron-down"></i></a>
+          <ul class="header__nav__sub">
+            <li><a class="nav__link" href="./dangnhap.html">Đăng nhập</a></li>
+            <li><a class="nav__link" href="./dangky.html">Đăng ký</a></li>
+          </ul>
+        </li>
+        <li> <a class="nav__link " href="./tintuc.html">Tin tức</a></li>
+      </ul>
+      <!-- search  -->
+      <div class="nav-r">
+        <form class="header__search" action="">
+          <div class="header__input-wrap"><input id="value__text" maxlength="50" class="header__input-text" type="text"
+              placeholder="Tìm kiếm sản phẩm">
+          </div>
+          <button class="header__search-btn">
+            <i class="fa fa-search form__icon-search header__search--btn-icon"></i>
+          </button>
+
+        </form>
+        <!-- cart layout -->
+        <a href="./giohang.html" class="header__cart">
+          <i class="header__cart-icon fa-solid fa-bag-shopping"></i>
+        </a>
+      </div>
+
+    </nav>
+  </header>
+  <main class="body_main">
+    <!-- <section class="main_section"> -->
+    <h1 class="section_h1">ĐĂNG NHẬP</h1>
+    <p class="section_p">Chưa có tài khoản? <a class="p_a" href="./dangky.html">Tạo tài khoản mới</a></p>
+
+    <div class="section_div">
+      <form class="form-user">
+        <label><i class="fas fa-user-alt" style="font-size: 20px"></i></label>
+        <input class="input-form-user" type="text" placeholder="Tên đăng nhập">
+
+        </input>
+      </form>
+
+      <form class="form-pass">
+        <label><i class="fas fa-unlock-alt" style="font-size: 20px"></i></label>
+        <input class="input-form-pass" type="text" placeholder="Mật khẩu" />
+      </form>
+    </div>
+    <div section_div2>
+      <form class="form-checkbox">
+        <input class="checkbox-luudangnhap" type="checkbox" name="dangnhap" value="Lưu đăng nhập"> Lưu đăng nhập
+      </form>
+      <a class="forgot-pass" href="#">Quên mật khẩu?</a>
+    </div>
 
 
-    </head>
-    <body>
-     <header class="header">
-        <a class="header__img-logo" href="#"><img class="img__logo" src="../atsses/img/logo.jpg" alt=""></a>
-        <nav class="header__nav">
-            <ul class="header__nav__list">
-                <li><a class="nav__link " href="/html/Untitled-1.html">Trang chủ</a> </li>
-                <li><a class="nav__link " href="/html/sanpham.html">Sản phẩm</a></li>
-                <li>
-                    <a class="nav__link" href="#">Tài khoản <i
-                            class="header__list-more fa-solid fa-chevron-down"></i></a>
-                    <ul class="header__nav__sub">
-                        <li><a class="nav__link" href="./dangnhap.html">Đăng nhập</a></li>
-                        <li><a class="nav__link" href="./dangky.html">Đăng ký</a></li>
-                    </ul>
-                </li>
-                <li> <a class="nav__link " href="./tintuc.html">Tin tức</a></li>
-            </ul>
-            <!-- search  -->
-            <form class="header__search" action="">
-                <div class="header__input-wrap"><input id="value__text" maxlength="50" class="header__input-text" type="text"
-                        placeholder="Tìm kiếm sản phẩm">
-                </div>
-                <button class="header__search-btn">
-                    <i class="fa fa-search form__icon-search header__search--btn-icon"></i>
-                </button>
-            </form>
-            <!-- cart layout -->
-            <form class="header__cart">
-                <i class="header__cart-icon fa-solid fa-bag-shopping"></i>
-                <!-- <div class="header__cart-list header__cart-list-no-cart">
-                    <img src="../atsses/img/empty-cart.webp" alt="" class="header__cart-list-no-cart-img">
-                    <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
-                </div> -->
-            </form>
-        </nav>
-    </header>
-        <main class="body_main">
-            <!-- <section class="main_section"> -->
-                <h1 class="section_h1">ĐĂNG NHẬP</h1>
-                <p class="section_p">Chưa có tài khoản? <a class="p_a" href="http://127.0.0.1:5501/dangky.html">Tạo tài khoản mới</a></p>
-                
-                <div class="section_div" >
-                    <form class="form-user">
-                    <label><i class="fas fa-user-alt" style="font-size: 20px"></i></label> 
-                      <input  class="input-form-user"
-                      type="text"
-                      placeholder="Tài khoản">
-                    
-                      </input>
-                    </form>
-        
-                  <form class="form-pass">
-                    <label><i class="fas fa-unlock-alt" style="font-size: 20px"></i></label>
-                    <input
-                      class="input-form-pass"
-                      type="text"
-                      placeholder="Mật khẩu"
-                    />
-                  </form>
-                </div>
-                <div section_div2>
-                    <form class="form-checkbox">
-                        <input class="checkbox-luudangnhap" type = "checkbox" name= "dangnhap" value="Lưu đăng nhập"> Lưu đăng nhập
-                    </form>
-                    <a class="forgot-pass" href="#">Quên mật khẩu?</a>
-                </div>
-                
+
+    <button id="button-dangnhap">
+      <a href="./trangchu.html" class="dangnhap">ĐĂNG NHẬP</a>
+    </button>
 
 
-                <button class="button-dangnhap">
-                  <a href="#" class="dangnhap">ĐĂNG NHẬP</a>
-                </button>
-            
-                
-            <!-- </section> -->
-        </main>
-        <footer></footer>
-    </body>
+    <!-- </section> -->
+  </main>
+  <footer></footer>
+</body>
+<script>
+  const btn_dangnhap = document.getElementById('button-dangnhap');
+  btn_dangnhap.addEventListener("click", () => alert("Đã đăng nhập thành công"));
+</script>
 
 </html>

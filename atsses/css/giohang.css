@@ -3,6 +3,10 @@
     width: 90%;
 }
 
+.container--title {
+    margin-bottom: 10px;
+}
+
 .list-items {
     font-family: arial, sans-serif;
     border-collapse: collapse;

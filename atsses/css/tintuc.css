@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .article__title {
     font-family: "Open Sans", "sans-serif";
     font-weight: 300;
@@ -217,10 +219,11 @@ h3 {
 }
 
 .tdc-row {
-    width: 1200x;
+    /* width: 1200x;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
+    position: relative; */
+    display: flex;
 }
 
 .news__update {
@@ -340,6 +343,7 @@ h3 {
     text-align: center;
     clear: both;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .td__load--more a {

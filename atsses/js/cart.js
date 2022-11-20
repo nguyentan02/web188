@@ -46,7 +46,7 @@ function loadShopingCart() {
 }
 function showCart() {
     if (localStorage.cartItems == undefined) {
-        alert('Your cart is emty. Please go back homepage to order items.');
+        alert('Giỏ hàng đang trống .Trở về trang sản phẩm');
         location.href = "sanpham.html";
     } else {
         let customerCart = JSON.parse(localStorage.getItem('cartItems'));
@@ -55,7 +55,7 @@ function showCart() {
         const tblBody = document.getElementsByTagName('tbody')[0];
         const tblHFoot = document.getElementsByTagName('tfoot')[0];
         let headColumns = bodyRows = footColumns = '';
-        headColumns += '<tr><th>No</th><th>Item Id</th><th>Item Name</th> <th>Quantity</th><th> Item Price</th><th>Delete</th></tr >';
+        headColumns += '<tr><th>STT</th><th>ID</th><th>Tên Sản phẩm</th> <th>Số lượng</th><th>Giá</th><th>Delete</th></tr >';
         tblHead.innerHTML = headColumns;
         vat = total = amountPaid = 0;
         no = 0;
@@ -63,19 +63,18 @@ function showCart() {
             bodyRows += '<tr><td colspan="5">No items found</td></tr>'
         } else {
             customerCart.forEach(div__item => {
-                total += Number(div__item.quantity) * Number(div__item.price.replace(/[^0-9]/g, ""));
                 bodyRows += '<tr><td>' + ++no + '</td><td>' + div__item.id + '</td><td>' + div__item.name
                     + '</td><td>' + div__item.quantity + '</td><td>' + formatCurrency(
                         div__item.price.replace(/[^0-9]/g, "")) + '</td><td><a href= "#" onclick = "deleteCart(this)"> Delete</a></td></tr >';
+                total += Number(div__item.quantity) * Number(div__item.price.replace(/[^0-9]/g, ""));
             });
         }
         tblBody.innerHTML = bodyRows;
-        footColumns += '<tr><td colspan = "4">Total:</td> <td>' + formatCurrency(total) +
+        footColumns += '<tr><td colspan = "4">Tổng:</td> <td>' + formatCurrency(total) +
             '</td><td rowspan = "3"></td></tr>';
-        footColumns += '<tr><td colspan = "4">VAT (10%):</td> <td>' + formatCurrency(Math.floor(total * 0.1)) +
-            '</td></tr>';
+        footColumns += '<tr><td colspan = "4">VAT (10%):</td> <td>' + formatCurrency(Math.floor(total * 0.1))
         footColumns += '<tr><td colspan = "4">Amount paid:</td> <td>' + formatCurrency(Math.floor(1.1 * total)) +
-            '</td></tr>';
+            '</td></tr>'
         tblHFoot.innerHTML = footColumns;
     }
 }
@@ -98,6 +97,7 @@ function deleteCart(evt) {
             })
         }
     }
+
     localStorage.setItem('cartItems', JSON.stringify(custommerCart))
     window.location.reload()
 };
@@ -117,6 +117,27 @@ const formatCurrency = (amount, locale = "vi-VN") => {
         maximumFractionDigits: 2
     }).format(amount);
 };
+
+const btn_order = () => {
+    let Cart = JSON.parse(localStorage.getItem('cartItems'), [])
+
+    if (checkItem(Cart) !== -1) {
+        let says = confirm('Đặt Hàng?')
+        if (says) {
+            many = Number(many).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
+
+            alert('Đặt hàng thành công, Số tiền phải trả là: ' + many)
+            Cart = Cart.filter(item => {
+                return item.quantity < 0
+            })
+            localStorage.setItem('cartItems', JSON.stringify(Cart))
+            window.location.reload()
+        }
+    } else {
+        alert('Bạn chưa có sản phẩm trong giỏ hàng!')
+        location.href = "sanpham.html"
+    }
+}
 
 
 

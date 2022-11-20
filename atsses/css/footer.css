@@ -1,3 +1,7 @@
+.body {
+  background-color: aqua;
+}
+
 .body_footer {
   border: 3px solid red;
   background-color: aliceblue;
@@ -31,7 +35,7 @@
 
 .footer_div2 {
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .div2_ul {
@@ -55,7 +59,8 @@
 
 .footer_div3 {
   display: inline-block;
-  margin-left: 100px;
+  margin-left: 50px;
+
 }
 
 .div3_ul {
@@ -95,3 +100,32 @@
 .div3-p-free {
   font-size: 18px;
 } */
+.footer_div4 {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.div4_ul {
+  list-style: none;
+}
+
+.ul4_li {
+  list-style: none;
+}
+
+.div_h1 {
+  font-size: 20px;
+}
+
+.div_p {
+  font-size: 18px;
+}
+
+.div4_p--a {
+  text-decoration: none;
+  color: blue;
+}
+
+.ul1_li {
+  margin-top: 20px;
+}

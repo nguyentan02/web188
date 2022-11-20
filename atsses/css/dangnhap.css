@@ -1,78 +1,90 @@
 body {
   background-color: #ebebe0;
 }
+
 .body_main {
-  background-color: rgb(0, 85, 255);
-  border: 3px solid olive;
+  background-color: rgba(30, 25, 25, 0.659);
+  border: 3px solid white;
+  border-radius: 5px;
   display: block;
   text-align: center;
   margin-top: 200px;
   margin-left: 400px;
   margin-right: 400px;
 }
+
 .section_h1 {
-  font-size: 30px;
-}
-.section_p {
-  font-size: 18px;
-  color: black;
-}
-.p_a {
-  text-decoration: none;
+  padding-top: 10px;
+  font-size: 25px;
   color: white;
 }
-.section_div {
+
+.section_p {
+  font-size: 18px;
+  color: white;
 }
 
-.form-user {
+.p_a {
+  text-decoration: none;
+  color: wheat;
 }
+
+.section_div {}
+
+.form-user {}
+
 .input-form-user {
-  border: 2px solid olive;
+  border: 2px solid black;
   border-radius: 3px;
   font-size: 16px;
   padding: 3px 70px 3px 10px;
+  background-color: #ebebe0;
+  color: black;
 }
 
-.form-pass {
-}
+.form-pass {}
+
 .input-form-pass {
   margin-top: 8px;
-  border: 2px solid olive;
+  border: 2px solid black;
   border-radius: 3px;
   font-size: 16px;
   padding: 3px 70px 3px 10px;
+  background-color: #ebebe0;
+  color: black;
 }
 
-.section_div2 {
-}
+.section_div2 {}
 
 .form-checkbox {
   display: inline-block;
   margin-top: 10px;
   font-size: 18px;
-  color: black;
+  color: white;
 }
-.checkbox-luudangnhap {
-}
+
+.checkbox-luudangnhap {}
 
 .forgot-pass {
   display: inline-block;
   margin-left: 10px;
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: wheat;
 }
 
-.button-dangnhap {
+#button-dangnhap {
   margin-top: 10px;
   margin-bottom: 20px;
-  border: 3px solid blue;
+  margin-left: 20px;
+  border: 3px solid rgba(245, 222, 179, 0.289);
   border-radius: 3px;
-  background-color: blue;
+  background-color: rgba(245, 222, 179, 0.289);
 }
+
 .dangnhap {
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
-  padding: 10px 78px;
+  padding: 15px 20px;
   color: white;
 }
