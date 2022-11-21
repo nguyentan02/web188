@@ -9,19 +9,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="../atsses/css/trangchu.css" />
   <link rel="stylesheet" href="../atsses/css/main.css">
-  <link rel="shortcut icon" type="" href="../atsses/img/logo.jpg">
+  <link rel="shortcut icon" type="" href="../atsses/../atsses/img/trangchu/logo.jpg">
 </head>
 
 <body class="body_tc">
   <header class="header">
-    <a class="header__img-logo" href="#"><img class="img__logo" src="../atsses/img/logocomputer.png" alt=""></a>
-    <nav class="header__nav">
-      <ul class="header__nav__list">
-        <li><a class="nav__link " href="./trangchu.html">Trang chủ</a> </li>
-        <li><a class="nav__link " href="./sanpham.html">Sản phẩm</a></li>
-        <li>
-          <a class="nav__link" href="#">Tài khoản <i class="header__list-more fa-solid fa-chevron-down"></i></a>
-          <ul class="header__nav__sub">
+    <a class="header__img-logo" href="./trangchu.html"><img class="img__logo" src="../atsses/img/logocomputer.png"
+        alt=""></a>
+    <nav class="header__nav header__nav--tablet header__nav--mobile">
+      <ul class="header__nav__list  hide-on-mobile">
+        <li><a class="nav__link " href="/html/trangchu.html">Trang chủ</a> </li>
+        <li><a class="nav__link" href="/html/sanpham.html">Sản phẩm</a></li>
+        <li class="hide-on-tablet ">
+          <a class="nav__link " href="#">Tài khoản <i class="header__list-more fa-solid fa-chevron-down"></i></a>
+          <ul class="header__nav__sub hide-on-tablet">
             <li><a class="nav__link" href="./dangnhap.html">Đăng nhập</a></li>
             <li><a class="nav__link" href="./dangky.html">Đăng ký</a></li>
           </ul>
@@ -30,7 +31,7 @@
         <li><a class="nav__link " href="./gioithieu.html">Giới thiệu</a></li>
       </ul>
       <!-- search  -->
-      <div class="nav-r">
+      <div class="nav__form">
         <form class="header__search" action="">
           <div class="header__input-wrap"><input id="value__text" maxlength="50" class="header__input-text" type="text"
               placeholder="Tìm kiếm sản phẩm">
@@ -106,7 +107,7 @@
     </section>
     <section class="banner-container">
       <div class="banner">
-        <img src="img/banner1.jpg" alt="">
+        <img src="../atsses/img/trangchu/banner1.jpg" alt="">
         <div class="banner_content">
           <span class="content_span">Sản Phẩm Hot</span>
           <h3 class="content_h3">Uư đãi cực khủng</h3>
@@ -114,7 +115,7 @@
         </div>
       </div>
       <div class="banner">
-        <img src="img/banner2.jpg" alt="">
+        <img src="../atsses/img/trangchu/banner2.jpg" alt="">
         <div class="banner_content">
           <span class="content_span">Sản Phẩm Hot</span>
           <h3 class="content_h3">Uư đãi cực khủng</h3>
@@ -126,19 +127,19 @@
       <h1 class="title">DANH MỤC</h1>
       <div class="box-container">
         <a href="#" class="box">
-          <img src="img/category1.jpg" alt="">
+          <img src="../atsses/img/trangchu/category1.jpg" alt="">
           <h3>PC Gaming</h3>
         </a>
         <a href="#" class="box">
-          <img src="img/category2.jpg" alt="">
+          <img src="../atsses/img/trangchu/category2.jpg" alt="">
           <h3>PC Văn Phòng</h3>
         </a>
         <a href="#" class="box">
-          <img src="img/category3.jpg" alt="">
+          <img src="../atsses/img/trangchu/category3.jpg" alt="">
           <h3>Phụ Kiện Máy Tính</h3>
         </a>
         <a href="#" class="box">
-          <img src="img/category4.webp" alt="">
+          <img src="../atsses/img/trangchu/category4.webp" alt="">
           <h3>Màn Hình</h3>
         </a>
       </div>
@@ -146,56 +147,56 @@
     <section class="main_products">
       <h1 class="title">CÁC SẢN PHẨM PC<a href="./sanpham.html">Xem Tất Cả>></a></h1>
       <div class="box-container">
-        <div class="box">
+        <div id="021" class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pc1.webp" alt="">
+            <img src="../atsses/img/trangchu/pc1.webp" alt="">
           </div>
           <div class="box_content">
             <h3 class="content_h3">PC Gaming E-Power F3060 i5 11400F/16GB/500GB/750W/GeForce RTX 3060</h3>
-            <div class="content_price">21.490.000 đ</div>
+            <div class="content_price">21490000</div>
           </div>
         </div>
-        <div class="box">
+        <div id="022" class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pc2.jpg" alt="">
+            <img src="../atsses/img/trangchu/pc2.jpg" alt="">
           </div>
           <div class="box_content">
             <h3>Máy tính AIO Asus Vivo V222FAK-BA144W i5 10210U/8GB/512GB/21.5FHD/Chuột+Bàn phím/Win 11</h3>
-            <div class="content_price">16.490.000 đ</div>
+            <div class="content_price">16490000</div>
           </div>
         </div>
-        <div class="box">
+        <div id="023" class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pc3.jpg" alt="">
+            <img src="../atsses/img/trangchu/pc3.jpg" alt="">
           </div>
           <div class="box_content">
             <h3>Máy tính để bàn HP Pavilion TP01-3007d i5 12400/8GB/512GB/Bàn phím+Chuột/Win 11</h3>
-            <div class="content_price">18.990.000 đ</div>
+            <div class="content_price">18990000</div>
           </div>
         </div>
-        <div class="box">
+        <div id="024" class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pc4.webp" alt="">
+            <img src="../atsses/img/trangchu/pc4.webp" alt="">
           </div>
           <div class="box_content">
             <h3>Máy tính để bàn Lenovo IdeaCentre AIO 3 24ITL6 i3 1115G4/4GB/256GB/23.8 FHD/ Chuột-Bàn phím/Win11</h3>
-            <div class="content_price">20.490.000 đ</div>
+            <div class="content_price">20490000</div>
           </div>
         </div>
       </div>
@@ -205,54 +206,54 @@
       <div class="box-container">
         <div class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pk1.jpg" alt="">
+            <img src="../atsses/img/trangchu/pk1.jpg" alt="">
           </div>
           <div class="box_content">
             <h3>Tai nghe không dây Prolink PHB6003E Đen Đỏ</h3>
-            <div class="content_price">449.000 đ</div>
+            <div class="content_price">449000</div>
           </div>
         </div>
         <div class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pk2.jpg" alt="">
+            <img src="../atsses/img/trangchu/pk2.jpg" alt="">
           </div>
           <div class="box_content">
             <h3>Chuột không dây Microsoft Bluetooth Mouse RJN-00041</h3>
-            <div class="content_price">429.000 Đ</div>
+            <div class="content_price">429000</div>
           </div>
         </div>
         <div class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
             <a href="#" class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pk3.jpg" alt="">
+            <img src="../atsses/img/trangchu/pk3.jpg" alt="">
           </div>
           <div class="box_content">
             <h3>Bàn phím máy tính Apoint A9</h3>
-            <div class="content_price">120,000 Đ</div>
+            <div class="content_price">120000</div>
           </div>
         </div>
         <div class="box">
           <div class="box_icons">
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-eye"></a>
+            <a class="cart"><i class="fas fa-shopping-cart"></i></a>
+            <a class="fas fa-eye"></a>
           </div>
           <div class="box_img">
-            <img src="img/pk4.jpg" alt="">
+            <img src="../atsses/img/trangchu/pk4.jpg" alt="">
           </div>
           <div class="box_content">
             <h3>Màn hình Asus ProArt PA278CV 27 inch 2K/75Hz/5ms</h3>
-            <div class="content_price">10.490.000 Đ</div>
+            <div class="content_price">10490000</div>
           </div>
         </div>
       </div>
@@ -261,7 +262,7 @@
       <h1 class="title">VỀ CỬA HÀNG</h1>
       <div class="about_text">
         <div class="text_img">
-          <img src="img/about.jpg" alt="">
+          <img src="../atsses/img/trangchu/about.jpg" alt="">
         </div>
         <div class="text_content">
           <h3>GIỚI THIỆU VỀ PCCANTHO</h3>
@@ -279,7 +280,7 @@
       <div class="box-container">
         <div class="box">
           <div class="box_img">
-            <img src="img/blogs1.jpg" alt="">
+            <img src="../atsses/img/trangchu/blogs1.jpg" alt="">
           </div>
           <div class="box_content">
             <div class="content_icons">
@@ -295,7 +296,7 @@
         </div>
         <div class="box">
           <div class="box_img">
-            <img src="img/blogs2.webp" alt="">
+            <img src="../atsses/img/trangchu/blogs2.webp" alt="">
           </div>
           <div class="box_content">
             <div class="content_icons">
@@ -311,7 +312,7 @@
         </div>
         <div class="box">
           <div class="box_img">
-            <img src="img/blogs3.jpeg" alt="">
+            <img src="../atsses/img/trangchu/blogs3.jpeg" alt="">
           </div>
           <div class="box_content">
             <div class="content_icons">
@@ -327,7 +328,7 @@
         </div>
         <div class="box">
           <div class="box_img">
-            <img src="img/blogs4.jpeg" alt="">
+            <img src="../atsses/img/trangchu/blogs4.jpeg" alt="">
           </div>
           <div class="box_content">
             <div class="content_icons">
@@ -343,7 +344,7 @@
         </div>
         <div class="box">
           <div class="box_img">
-            <img src="img/blogs5.webp" alt="">
+            <img src="../atsses/img/trangchu/blogs5.webp" alt="">
           </div>
           <div class="box_content">
             <div class="content_icons">
@@ -359,7 +360,7 @@
         </div>
         <div class="box">
           <div class="box_img">
-            <img src="img/blogs6.jpg" alt="">
+            <img src="../atsses/img/trangchu/blogs6.jpg" alt="">
           </div>
           <div class="box_content">
             <div class="content_icons">
@@ -379,14 +380,14 @@
       <h1 class="title">PHƯƠNG THỨC THANH TOÁN</h1>
       <div class="info-container">
         <div class="info">
-          <img src="img/payment1.jpg" alt="">
+          <img src="../atsses/img/trangchu/payment1.jpg" alt="">
           <div class="info_content">
             <h3>Thanh toán bằng tiền mặt</h3>
             <span>Phương thức phổ biến</span>
           </div>
         </div>
         <div class="info">
-          <img src="img/payment2.jpg" alt="">
+          <img src="../atsses/img/trangchu/payment2.jpg" alt="">
           <div class="info_content">
             <h3>Thanh toán bằng thẻ tín dụng</h3>
             <span>Tiện lợi, nhanh chóng</span>
@@ -492,7 +493,7 @@
             </li>
             <li class="ul4_li">
               <p class="div4_p">
-                <a class="div4_p--a" href="#"> <img src="./img/bo-cong-thuong.png" alt=""></a>
+                <a class="div4_p--a" href="#"> <img src="../atsses/img/trangchu/bo-cong-thuong.png" alt=""></a>
               </p>
             </li>
             <li class="ul4_li">
@@ -503,7 +504,7 @@
             </li>
             <li class="ul4_li">
               <p class="div4_p">
-                <a class="div4_p--a" href="#"><img src="./img/handle_cert.png" alt=""></a>
+                <a class="div4_p--a" href="#"><img src="../atsses/img/trangchu/handle_cert.png" alt=""></a>
               </p>
             </li>
             <li class="ul4_li">
@@ -519,8 +520,16 @@
       </div>
     </footer>
   </main>
-
   <script src="../atsses/js/trangchu.js"></script>
+  <script src="../atsses/js/cart.js"></script>
+  <script>
+    const prices = document.querySelectorAll('.content_price')
+    prices.forEach(item => {
+      item.innerText = Number(item.innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
+    })
+
+    window.addEventListener('load', loadShopingCartHome, false);
+  </script>
 </body>
 
 </html>

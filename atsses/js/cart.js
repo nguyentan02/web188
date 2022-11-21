@@ -44,6 +44,47 @@ function loadShopingCart() {
     let arrCartLinks = Array.from(add2CartLinks);
     arrCartLinks.forEach(attchingEvent);
 }
+
+// trang chu
+function loadShopingCartHome() {
+    const selectedItems = (evt) => {
+        let id = evt.target;
+        console.log(id.parentElement.parentElement.children[2].children[2].textContent);
+        getItem = document.getElementById(id)
+        if (typeof Storage !== undefined) {
+            let newItem = {
+                id: id.parentElement.parentElement.id,
+                name: id.parentElement.parentElement.children[1].textContent,
+                price: id.parentElement.parentElement.children[2].children[2].textContent.slice(0, -2).split('.').join(''),
+                quantity: 1,
+                urlImg: id.parentElement.parentElement.children[0].currentSrc
+            };
+            if (JSON.parse(localStorage.getItem('cartItems')) === null) {
+                updateCart.push(newItem);
+                localStorage.setItem('cartItems', JSON.stringify(updateCart));
+                // window.location.reload();
+            } else {
+                updateCart = JSON.parse(localStorage.getItem('cartItems'));
+                if ((index = isExistedInCart(newItem, updateCart)) >= 0) {
+                    updateCart[index].quantity++;
+                } else {
+                    updateCart.push(newItem);
+                }
+            }
+            localStorage.setItem('cartItems', JSON.stringify(updateCart));
+            // window.location.reload();
+        } else {
+            alert('Local storage is not working on your browser');
+        }
+    }
+
+    const attchingEvent = evt => evt.addEventListener('click', selectedItems);
+    const add2CartLinks = document.getElementsByClassName('cart');
+    let arrCartLinks = Array.from(add2CartLinks);
+    arrCartLinks.forEach(attchingEvent);
+}
+
+
 function showCart() {
     if (localStorage.cartItems == undefined) {
         alert('Giỏ hàng đang trống .Trở về trang sản phẩm');

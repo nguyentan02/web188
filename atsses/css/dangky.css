@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background-color: #ebebe0;
   position: relative;
@@ -10,6 +5,7 @@ body {
 }
 
 .body_main {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,6 +26,7 @@ body {
 }
 
 table {
+  font-family: (--title--font);
   table-layout: fixed;
   width: 80%;
   margin-left: 15%;

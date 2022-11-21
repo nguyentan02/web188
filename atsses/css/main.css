@@ -1,6 +1,12 @@
+ /* Nguyen Duy Tan B2003919 */
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
  :root {
      --white--color: #fff;
      --black--color: #000;
+     --header--font: 'Poppins', sans-serif;
+     --title--font: 'Roboto', sans-serif;
  }
 
  .page__main {
@@ -11,7 +17,6 @@
      padding: 0;
      margin: 0;
      box-sizing: border-box;
-     font-family: 'Roboto', sans-serif;
  }
 
  .grid {
@@ -57,7 +62,7 @@
  }
 
  .header {
-     font-family: 'Roboto', sans-serif;
+     font-family: var(--header--font);
      position: fixed;
      display: flex;
      width: 100%;
@@ -65,11 +70,12 @@
      top: 0;
      z-index: 1;
      height: 60px;
-
+     left: 0;
+     right: 0;
  }
 
  .header__img-logo {
-     /* background-color: #fff; */
+
      margin-left: 20px;
 
  }
@@ -105,11 +111,11 @@
  .header__nav__list>li:hover>a,
  .header__nav__sub>li:hover a {
      color: #ff3d00;
-     /* opacity: 0.7; */
+
  }
 
  .header__nav__sub li a {
-     display: block;
+     display: inline-block;
      padding: 0 24px;
      color: #ffffff;
      border-bottom: 0.9px solid #e8e8e8;
@@ -127,7 +133,7 @@
      display: block;
  }
 
- .nav-r {
+ .nav__form {
      display: flex;
  }
 
@@ -145,8 +151,9 @@
  }
 
  .header__input-text {
+     font-family: inherit;
      height: 100%;
-     width: 80%;
+     width: 85%;
      border: none;
      outline: none;
      font-size: 17px;
@@ -191,16 +198,60 @@
      padding-left: 5px;
  }
 
- /* "footer" */
- .body {
-     background-color: aqua;
+ /*reponsive tablet */
+ @media(min-width:740px) and (max-width:1023px) {
+
+     .hide-on-tablet {
+         display: none;
+     }
+
+     .header__nav__list {
+         margin-left: 0;
+     }
+
+     .header__nav__list li a {
+         line-height: normal;
+         padding: 0;
+         padding-right: 20px;
+
+     }
+
+     .header__nav--tablet {
+
+         justify-content: flex-end;
+     }
  }
 
+ /*reponsive mobile */
+ @media(max-width:749px) {
+     .hide-on-mobile {
+         display: none;
+     }
+
+     .header__img-logo {
+         margin-left: 0;
+     }
+
+     .header__nav--mobile {
+         justify-content: flex-end;
+     }
+
+     .header__cart {
+         margin-right: 10px;
+     }
+ }
+
+
+
+
+
+ /* "footer" */
  .body_footer {
      border: 1px solid black;
      background-color: aliceblue;
      /* display: block;
     text-align: center; */
+     font-family: var(--title--font);
  }
 
  .footer__div {

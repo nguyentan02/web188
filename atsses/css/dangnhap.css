@@ -3,6 +3,7 @@ body {
 }
 
 .body_main {
+  font-family: var(--title--font);
   background-color: rgba(30, 25, 25, 0.659);
   border: 3px solid white;
   border-radius: 5px;

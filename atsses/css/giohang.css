@@ -1,6 +1,7 @@
 .container {
     margin: 80px auto;
     width: 90%;
+    font-family: var(--title--font);
 }
 
 .container--title {
@@ -8,7 +9,7 @@
 }
 
 .list-items {
-    font-family: arial, sans-serif;
+
     border-collapse: collapse;
     width: 100%;
 }
