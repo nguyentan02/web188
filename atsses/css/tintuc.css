@@ -25,7 +25,9 @@
     transform: skewX(-12deg) translateX(-50%);
 }
 
+.page__main--news{
 
+}
 
 .post-block {
     margin-top: 10px;
@@ -41,12 +43,13 @@
     border-top: 1px solid black;
 }
 
-.news__section {}
+.news__section {
+     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;}
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+   
 
 }
 
@@ -217,10 +220,7 @@ h3 {
 }
 
 .tdc-row {
-    /* width: 1200x;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative; */
+
     display: flex;
 }
 
@@ -229,15 +229,13 @@ h3 {
     min-height: 1px;
     float: left;
     padding-right: 24px;
-    padding-left: 34px;
+    /* padding-left: 34px; */
     position: relative;
     width: 73.66666667%;
 }
 
 .news__update--column {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+   
     padding-top: 20px;
 }
 
@@ -247,7 +245,7 @@ h3 {
 }
 
 .td-title__wrap {
-    font-family: 'Roboto', sans-serif;
+    font-family:var(--title--font);
     font-size: 14px;
     line-height: 1;
     margin-top: 0;
@@ -370,24 +368,17 @@ h3 {
     text-align: left;
 }
 
-/* .td__load--more:hover .td__module {
-    display: block;
-
-} */
-
 /* banner */
 .post__banner {
     display: block;
     min-height: 1px;
     float: left;
     padding-top: 20px;
-    padding-right: 31px;
     position: relative;
     width: 26.33333333%;
 }
 
 .post__wrapper {
-
     /* position: absolute; */
     top: 20px;
     bottom: auto;
@@ -405,4 +396,45 @@ h3 {
 }
 
 /* reponsive tablet */
-@media (min-width:750) and (max-width:1023px) {}
+@media (min-width:768px) and (max-width:1024px) {
+        .col-3{
+            flex: none;
+            min-width: 100%;
+        }
+        .news__col{
+            margin-right: 0;
+        }
+        .col-9{
+            flex: none;
+            min-width: 100%;
+        }
+}
+@media(max-width:767px){
+    .col-3{
+        flex: none;
+        max-width: 100%;
+    }
+    .news__update{
+        width: 100%;
+        padding:0;
+    }
+    .col-9,.post__banner{
+        display: none;
+    }
+    .td__module--thumb{
+        position: unset;
+        text-align: center;
+        width: 100%;
+    } 
+    .news__section{
+        padding: 0 20px;
+    }
+    .item__details{
+        margin: 0;
+    }
+    .img--module{
+        width: 100%;
+    }
+   
+    
+}

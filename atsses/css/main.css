@@ -199,10 +199,10 @@
  }
 
  /*reponsive tablet */
- @media(min-width:740px) and (max-width:1023px) {
+ @media(min-width:750px) and (max-width:1024px) {
 
      .hide-on-tablet {
-         display: none;
+         /* display: none; */
      }
 
      .header__nav__list {
@@ -210,17 +210,19 @@
      }
 
      .header__nav__list li a {
-         line-height: normal;
-         padding: 0;
-         padding-right: 20px;
+         /* line-height: normal; */
+         padding:5px 20px;
+         /* height: 45px; */    
+    
 
      }
 
      .header__nav--tablet {
 
-         justify-content: flex-end;
+         justify-content:space-evenly;
      }
  }
+
 
  /*reponsive mobile */
  @media(max-width:749px) {
