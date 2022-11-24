@@ -1,3 +1,7 @@
+//  Nguyễn Duy Tân 
+//  các tài liệu tham khảo 
+// --F8--
+// --(Shopping Cart)--
 
 function isExistedInCart(div__item, arrCart) {
     let myIndex = -1;
@@ -202,6 +206,8 @@ function click__more() {
     }
 }
 
+
+// reponsive mobile
 var header = document.getElementById('header__nav');
 // mobile--menu renposive
 var mobileMenu = document.getElementById('nav__menu');
