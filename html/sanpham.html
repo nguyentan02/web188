@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,14 @@
 </head>
 
 <body class="grid__full-with">
-    <header class="header">
-        <a class="header__img-logo" href="./trangchu.html"><img class="img__logo" src="../atsses/img/logocomputer.png"
-                alt=""></a>
+    <header id="header__nav" class="header ">
+        <a class="header__img-logo hide-on-mobile " href="./trangchu.html"><img class="img__logo"
+                src="../atsses/img/logocomputer.png" alt=""></a>
         <nav class="header__nav header__nav--tablet header__nav--mobile">
-            <ul class="header__nav__list  hide-on-mobile">
+            <div id="nav__menu" class=" nav__menu--mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="header__nav__list  ">
                 <li><a class="nav__link " href="/html/trangchu.html">Trang chủ</a> </li>
                 <li><a class="nav__link" href="/html/sanpham.html">Sản phẩm</a></li>
                 <li class="hide-on-tablet ">
@@ -30,7 +33,9 @@
                 </li>
                 <li> <a class="nav__link " href="./tintuc.html">Tin tức</a></li>
                 <li><a class="nav__link " href="./gioithieu.html">Giới thiệu</a></li>
+
             </ul>
+
             <!-- search  -->
             <div class="nav__form">
                 <form class="header__search" action="">
@@ -586,14 +591,11 @@
     </footer>
     <script src="../atsses/js/cart.js"></script>
     <script>
-
         const prices = document.querySelectorAll('.section__price')
         prices.forEach(item => {
             item.innerText = Number(item.innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
         })
-
         window.addEventListener('load', loadShopingCart, false);
-
     </script>
 
 </body>

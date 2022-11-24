@@ -67,9 +67,7 @@ const showCart = () => {
         const tblHead = document.getElementsByTagName('thead')[0]
         const tblBody = document.getElementsByTagName('tbody')[0]
         const tblFoot = document.getElementsByTagName('tfoot')[0]
-
         let headColumns = footColumns = ''
-
         headColumns += '<tr><th>STT</th><th>Hình</th><th colspan="2">Tên</th><th>Giá</th><th colspan="3">Số lượng</th></tr>'
         tblHead.innerHTML = headColumns
 

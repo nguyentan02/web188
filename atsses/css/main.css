@@ -92,6 +92,11 @@
      justify-content: space-between;
  }
 
+ .nav__menu--mobile {
+
+     color: #ffffff;
+ }
+
  .header__nav__list {
      display: flex;
      margin-left: 25px;
@@ -126,7 +131,6 @@
      position: absolute;
      background-color: rgb(23, 28, 36);
      transform: translateY(-10px);
-
  }
 
  .header__nav__list li:hover .header__nav__sub {
@@ -135,6 +139,7 @@
 
  .nav__form {
      display: flex;
+     align-items: center;
  }
 
  .header__search {
@@ -178,13 +183,12 @@
 
  }
 
- .header__search--btn-icon:hover {
+ .header__search--btn-icon:hover,
+ .header__cart-icon:hover,
+ .nav__menu--mobile:hover {
      color: #ff3d00;
  }
 
- .header__cart-icon:hover {
-     color: #ff3d00;
- }
 
  .header__cart {
      position: relative;
@@ -198,34 +202,49 @@
      padding-left: 5px;
  }
 
- /*reponsive tablet */
- @media(min-width:750px) and (max-width:1024px) {
+ @media(min-width:1031px) {
+     .nav__menu--mobile {
+         display: none;
+     }
+ }
 
-     .hide-on-tablet {
-         /* display: none; */
+ /*reponsive tablet */
+ @media(min-width:768px) and (max-width:1030px) {
+     .nav__menu--mobile {
+         display: none;
      }
 
      .header__nav__list {
          margin-left: 0;
+         white-space: nowrap;
      }
 
      .header__nav__list li a {
-         /* line-height: normal; */
-         padding:5px 20px;
-         /* height: 45px; */    
-    
+         line-height: normal;
+         padding: 5px 20px;
+         height: 45px;
 
      }
 
-     .header__nav--tablet {
+     .header__nav__sub {
+         margin-top: 25px;
+     }
 
-         justify-content:space-evenly;
+     .header__nav--tablet {
+         justify-content: space-evenly;
+     }
+
+     @media(max-width:920px) {
+         .header__search {
+             display: none;
+         }
      }
  }
 
 
  /*reponsive mobile */
- @media(max-width:749px) {
+ @media(max-width:767px) {
+
      .hide-on-mobile {
          display: none;
      }
@@ -234,18 +253,39 @@
          margin-left: 0;
      }
 
+     .header {
+         overflow: hidden;
+     }
+
+     .header,
+     .header__nav__list {
+         display: unset;
+         margin-left: 0;
+     }
+
+     .header__nav__sub {
+         position: relative;
+     }
+
+     .header__nav__list li a,
+     .header__nav__sub li a {
+         border-bottom: unset;
+         padding: unset;
+     }
+
+     .header__nav {
+         align-items: baseline;
+
+     }
+
      .header__nav--mobile {
-         justify-content: flex-end;
+         /* justify-content: flex-end; */
      }
 
      .header__cart {
          margin-right: 10px;
      }
  }
-
-
-
-
 
  /* "footer" */
  .body_footer {

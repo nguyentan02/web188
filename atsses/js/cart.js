@@ -201,3 +201,16 @@ function click__more() {
         check = 0;
     }
 }
+
+var header = document.getElementById('header__nav');
+// mobile--menu renposive
+var mobileMenu = document.getElementById('nav__menu');
+var headerHeight = header.clientHeight;
+mobileMenu.onclick = function () {
+    var isClosed = header.clientHeight === headerHeight;
+    if (isClosed) {
+        header.style.height = 'auto'
+    } else {
+        header.style.height = '60px'
+    }
+}
