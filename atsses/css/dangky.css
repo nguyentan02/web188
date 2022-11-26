@@ -1,3 +1,4 @@
+/* Nguyễn Hoàng Thái B2012141 */
 body {
   background-color: #ebebe0;
   position: relative;
@@ -6,10 +7,12 @@ body {
 
 .body_main {
 
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%); */
+  margin: 0 auto;
+  margin-top: 60px;
   display: block;
   border: 3px solid rgba(30, 25, 25, 0.593);
   border-color: white;

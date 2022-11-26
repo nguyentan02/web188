@@ -10,6 +10,7 @@
  }
 
  .page__main {
+     /* width: 1200px; */
      background-color: rgb(247, 247, 247);
  }
 
@@ -202,94 +203,7 @@
      padding-left: 5px;
  }
 
- @media(min-width:1031px) {
-     .nav__menu--mobile {
-         display: none;
-     }
- }
-
- /*reponsive tablet */
- @media(min-width:768px) and (max-width:1030px) {
-     .nav__menu--mobile {
-         display: none;
-     }
-
-     .header__nav {
-         /* justify-content:; */
-     }
-
-     .header__nav__list {
-         margin-left: 0;
-         white-space: nowrap;
-     }
-
-     .header__nav__list li a {
-         line-height: normal;
-         padding: 5px 20px;
-         height: 45px;
-
-     }
-
-     .header__nav__sub {
-         margin-top: 25px;
-     }
-
-     .header__nav--tablet {
-         justify-content: space-evenly;
-     }
-
-     @media(max-width:920px) {
-         .header__search {
-             display: none;
-         }
-     }
- }
-
-
- /*reponsive mobile */
- @media(max-width:767px) {
-
-     .hide-on-mobile {
-         display: none;
-     }
-
-     .header__img-logo {
-         margin-left: 0;
-     }
-
-     .header {
-         overflow: hidden;
-     }
-
-     .header,
-     .header__nav__list {
-         display: unset;
-         margin-left: 0;
-     }
-
-     .header__nav__sub {
-         position: relative;
-     }
-
-     .header__nav__list li a,
-     .header__nav__sub li a {
-         border-bottom: unset;
-         padding: unset;
-     }
-
-     .header__nav {
-         align-items: baseline;
-
-     }
-
-     .header__nav--mobile {}
-
-     .header__cart {
-         margin-right: 10px;
-     }
- }
-
- /* "footer" */
+ /* footer  Nguyễn Hoàng Thái B2012141*/
  .body_footer {
      border-top: 5px solid rgb(0, 49, 89);
      background-color: aliceblue;
@@ -383,3 +297,102 @@
  }
 
  .ul1_li {}
+
+ .footer-up {
+     width: 70px;
+     position: fixed;
+     padding: 10px;
+
+     bottom: 0;
+     right: 2%;
+     cursor: pointer;
+
+ }
+
+ /* reponsive Nguyễn Duy Tân B2003919 */
+
+ @media(min-width:1031px) {
+     .nav__menu--mobile {
+         display: none;
+     }
+ }
+
+ /*reponsive tablet */
+ @media(min-width:768px) and (max-width:1030px) {
+     .nav__menu--mobile {
+         display: none;
+     }
+
+     .header__nav {
+         /* justify-content:; */
+     }
+
+     .header__nav__list {
+         margin-left: 0;
+         white-space: nowrap;
+     }
+
+     .header__nav__list li a {
+         line-height: normal;
+         padding: 5px 20px;
+         height: 45px;
+
+     }
+
+     .header__nav__sub {
+         margin-top: 25px;
+     }
+
+     .header__nav--tablet {
+         justify-content: space-evenly;
+     }
+
+     @media(max-width:920px) {
+         .header__search {
+             display: none;
+         }
+     }
+ }
+
+
+ /*reponsive mobile */
+ @media(max-width:767px) {
+
+     .hide-on-mobile {
+         display: none;
+     }
+
+     .header__img-logo {
+         margin-left: 0;
+     }
+
+     .header {
+         overflow: hidden;
+     }
+
+     .header,
+     .header__nav__list,
+     .footer__div {
+         display: unset;
+         margin-left: 0;
+     }
+
+     .header__nav__sub {
+         position: relative;
+     }
+
+     .header__nav__list li a,
+     .header__nav__sub li a {
+         border-bottom: unset;
+         padding: unset;
+     }
+
+     .header__nav {
+         align-items: baseline;
+
+     }
+
+     .header__cart {
+         margin-right: 10px;
+     }
+ }

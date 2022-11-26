@@ -3,7 +3,9 @@
 }
 
 #section__list__box {
+    margin: 0 auto;
     /* position: relative; */
+
     overflow: auto;
     width: 100%;
     scroll-behavior: smooth;
@@ -31,7 +33,6 @@
     border: 3px solid #dbd7d9;
     border-radius: 15px;
     overflow: hidden;
-    width: 95%;
     background-color: #fff;
 }
 

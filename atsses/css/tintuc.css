@@ -1,3 +1,4 @@
+/* Nguyễn Duy Tân B2003919  */
 .article__title {
     font-family: "Open Sans", "sans-serif";
     font-weight: 300;
@@ -25,9 +26,7 @@
     transform: skewX(-12deg) translateX(-50%);
 }
 
-.page__main--news{
-
-}
+.page__main--news {}
 
 .post-block {
     margin-top: 10px;
@@ -44,14 +43,12 @@
 }
 
 .news__section {
-     width: 100%;
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;}
-
-.container {
-   
-
+    margin: 0 auto;
 }
+
+.container {}
 
 .row {
     display: flex;
@@ -235,7 +232,7 @@ h3 {
 }
 
 .news__update--column {
-   
+
     padding-top: 20px;
 }
 
@@ -245,7 +242,7 @@ h3 {
 }
 
 .td-title__wrap {
-    font-family:var(--title--font);
+    font-family: var(--title--font);
     font-size: 14px;
     line-height: 1;
     margin-top: 0;
@@ -397,44 +394,54 @@ h3 {
 
 /* reponsive tablet */
 @media (min-width:768px) and (max-width:1024px) {
-        .col-3{
-            flex: none;
-            min-width: 100%;
-        }
-        .news__col{
-            margin-right: 0;
-        }
-        .col-9{
-            flex: none;
-            min-width: 100%;
-        }
+    .col-3 {
+        flex: none;
+        min-width: 100%;
+    }
+
+    .news__col {
+        margin-right: 0;
+    }
+
+    .col-9 {
+        flex: none;
+        min-width: 100%;
+    }
 }
-@media(max-width:767px){
-    .col-3{
+
+@media(max-width:767px) {
+    .col-3 {
         flex: none;
         max-width: 100%;
     }
-    .news__update{
+
+    .news__update {
         width: 100%;
-        padding:0;
+        padding: 0;
     }
-    .col-9,.post__banner{
+
+    .col-9,
+    .post__banner {
         display: none;
     }
-    .td__module--thumb{
+
+    .td__module--thumb {
         position: unset;
         text-align: center;
         width: 100%;
-    } 
-    .news__section{
+    }
+
+    .news__section {
         padding: 0 20px;
     }
-    .item__details{
+
+    .item__details {
         margin: 0;
     }
-    .img--module{
+
+    .img--module {
         width: 100%;
     }
-   
-    
+
+
 }

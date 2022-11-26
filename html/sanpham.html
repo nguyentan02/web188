@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Nguyễn Duy Tân B2003919 -->
 
 <head>
     <meta charset="UTF-8">
@@ -583,18 +584,19 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </footer>
-    <script src="../atsses/js/cart.js"></script>
-    <script>
-        const prices = document.querySelectorAll('.section__price')
-        prices.forEach(item => {
-            item.innerText = Number(item.innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
-        })
-        window.addEventListener('load', loadShopingCart, false);
-    </script>
-
+    <button onclick="topFunction()" id="myBtn">
+        <img class="footer-up" src="../atsses/img/top.png" alt="">
+    </button>
 </body>
+<script src="../atsses/js/cart.js"></script>
+<script>
+    const prices = document.querySelectorAll('.section__price')
+    prices.forEach(item => {
+        item.innerText = Number(item.innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
+    })
+    window.addEventListener('load', loadShopingCart, false);
+</script>
 
 </html>

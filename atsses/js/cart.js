@@ -87,7 +87,14 @@ function loadShopingCartHome() {
     let arrCartLinks = Array.from(add2CartLinks);
     arrCartLinks.forEach(attchingEvent);
 }
+const order = () => {
+    let Cart = JSON.parse(localStorage.getItem('cartItems'), [])
+    console.log(Cart)
+    let btn_order = confirm('Bạn muốn đặt hàng?')
+    alert('Đặt hàng thành công, Số tiền phải trả là: ' + formatCurrency(Math.floor(1.1 * total)))
+    window.location.reload();
 
+}
 
 function showCart() {
     if (localStorage.cartItems == undefined) {
@@ -116,7 +123,7 @@ function showCart() {
         }
         tblBody.innerHTML = bodyRows;
         footColumns += '<tr><td colspan = "4">Tổng:</td> <td>' + formatCurrency(total) +
-            '</td><td rowspan = "3"></td></tr>';
+            '</td><td rowspan = "3"><a href= "#" onclick ="btn_order()">Đặt hàng</a></td></tr>';
         footColumns += '<tr><td colspan = "4">VAT (10%):</td> <td>' + formatCurrency(Math.floor(total * 0.1))
         footColumns += '<tr><td colspan = "4">Amount paid:</td> <td>' + formatCurrency(Math.floor(1.1 * total)) +
             '</td></tr>'
@@ -163,15 +170,21 @@ const formatCurrency = (amount, locale = "vi-VN") => {
     }).format(amount);
 };
 
+const checkItem = (arr) => {
+    let temp = -1
+    arr.forEach(item => {
+        if (item.quantity > 0) temp = 1
+    })
+    return temp
+}
 const btn_order = () => {
     let Cart = JSON.parse(localStorage.getItem('cartItems'), [])
 
     if (checkItem(Cart) !== -1) {
-        let says = confirm('Đặt Hàng?')
-        if (says) {
-            many = Number(many).toLocaleString('de-DE', { style: 'currency', currency: 'VND' })
-
-            alert('Đặt hàng thành công, Số tiền phải trả là: ' + many)
+        let selection = confirm('Đặt Hàng?')
+        if (selection) {
+            totalbill = formatCurrency(Math.floor(1.1 * total))
+            alert('Đặt hàng thành công, Số tiền phải trả là: ' + totalbill)
             Cart = Cart.filter(item => {
                 return item.quantity < 0
             })
@@ -207,7 +220,7 @@ function click__more() {
 }
 
 
-// reponsive mobile
+// reponsive menu nav mobile
 var header = document.getElementById('header__nav');
 // mobile--menu renposive
 var mobileMenu = document.getElementById('nav__menu');
@@ -219,4 +232,23 @@ mobileMenu.onclick = function () {
     } else {
         header.style.height = '60px'
     }
+}
+
+
+//  button to top 
+
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
